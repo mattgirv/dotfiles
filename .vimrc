@@ -4,7 +4,7 @@
 "" VISUALS
 ""
 
-colorscheme perun 
+colorscheme base16-gruvbox-dark-hard
 set t_Co=256
 set background=dark
 set nocompatible
@@ -25,6 +25,11 @@ Plugin 'godlygeek/csapprox'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 
@@ -69,10 +74,8 @@ filetype plugin indent on
 set completeopt=longest,menuone
 
 """
-""" KEY REMAPS
+""" KEY CONFS AND REMAPS (STANDARD VIM)
 """
-map <C-n> :NERDTreeToggle<CR>
-
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
@@ -89,7 +92,7 @@ set mouse=a
 ""
 set makeprg=make\ -C\ ../build\ -j12
 nnoremap <F4> :make!<cr>
-"" alt. config options
+"" pull in youcompleteme configuration stuff
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 ""
 "" PLUGIN SPECIFIC
@@ -98,3 +101,10 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 " vim-airline stuff
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+" tagbar / ctags binds
+nmap <F8> :TagbarToggle<CR>
+" nerdtree binds
+map <C-n> :NERDTreeToggle<CR>
+" fzf binds
+map ; :Files<CR>
+

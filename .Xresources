@@ -3,6 +3,7 @@
 ##
 #
 ## rvxt-unicode settings
+urxvt*termName: rxvt-256color
 urxvt*scrollBar:    false
 urxvt*depth:            32
 urxvt*saveLines:        10000
