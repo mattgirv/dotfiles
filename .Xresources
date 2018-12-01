@@ -1,0 +1,76 @@
+##
+## mattgirvs Xresources / rxvt-unicode conf
+##
+#
+## rvxt-unicode settings
+urxvt*scrollBar:    false
+urxvt*depth:            32
+urxvt*saveLines:        10000
+urxvt*background:   #151515
+urxvt*foreground:   #d7d0c7
+urxvt*cursorBlink:      true
+urxvt*perl-ext-common:	default,matcher,vtwheel
+urxvt*urlLauncher:      /usr/bin/chromium
+urxvt*matcher*button:	1
+
+urxvt*font:             xft:Hack:size=8:antialias=true:autohint=true
+urxvt*boldFont:         xft:Hack:size=8:antialias=true:autohint=true
+URxvt.colorIT:      #33cade
+URxvt.colorBD:      #ffcf4a
+URxvt.colorUL:      #ba1356
+
+## Shell Base Colors
+#define base00 #f8f8f8
+#define base01 #e8e8e8
+#define base02 #d8d8d8
+#define base03 #b8b8b8
+#define base04 #585858
+#define base05 #383838
+#define base06 #282828
+#define base07 #181818
+#define base08 #ab4642
+#define base09 #dc9656
+#define base0A #f7ca88
+#define base0B #a1b56c
+#define base0C #86c1b9
+#define base0D #7cafc2
+#define base0E #ba8baf
+#define base0F #a16946
+
+! special
+*.foreground:   #d7d0c7
+*.background:   #151515
+*.cursorColor:  #d7d0c7
+
+! black
+*.color0:       #101010
+*.color8:       #404040
+
+! red
+*.color1:       #e84f4f
+*.color9:       #d23d3d
+
+! green
+*.color2:       #b8d68c
+*.color10:      #a0cf5d
+
+! yellow
+*.color3:       #e1aa5d
+*.color11:      #f39d21
+
+! blue
+*.color4:       #7dc1cf
+*.color12:      #4e9fb1
+
+! magenta
+*.color5:       #9b64fb
+*.color13:      #8542ff
+
+! cyan
+*.color6:       #6d878d
+*.color14:      #42717b
+
+! white
+*.color7:       #dddddd
+*.color15:      #dddddd
+
