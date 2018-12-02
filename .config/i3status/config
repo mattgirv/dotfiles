@@ -9,13 +9,14 @@ general {
 order += "volume master"
 order += "disk /"
 order += "disk /home"
-order += "ethernet enp2s0"
+order += "disk /media/linuxstore"
+order += "ethernet enp24s0"
 order += "cpu_temperature 0"
 order += "cpu_usage"
 order += "load"
 order += "tztime local"
 
-ethernet enp2s0 {
+ethernet enp24s0 {
     format_up   = "%ip (%speed)"
     format_down = ""
 }
@@ -46,6 +47,13 @@ disk "/" {
 
 disk "/home" {
 	format = " %avail"
+	prefix_type	= custom
+	low_threshold = 20
+	threshold_type = percentage_avail
+}
+
+disk "/media/linuxstore" {
+    format = " %avail"
 	prefix_type	= custom
 	low_threshold = 20
 	threshold_type = percentage_avail

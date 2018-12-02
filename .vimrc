@@ -30,6 +30,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jacoborus/tender.vim'
+Plugin 'Konfekt/vim-scratchpad'
 
 call vundle#end()
 
@@ -102,6 +103,9 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'tender'
+" scratchpad
+let g:scratchpad_path = '.scratchpad'
+let g:scratchpad_ftype = ''
 " tagbar / ctags binds
 nmap <F8> :TagbarToggle<CR>
 " nerdtree binds
