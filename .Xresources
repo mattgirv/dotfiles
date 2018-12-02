@@ -1,7 +1,7 @@
 ##
 ## mattgirvs Xresources / rxvt-unicode conf
 ##
-#
+
 ## rvxt-unicode settings
 urxvt*termName: rxvt-256color
 urxvt*scrollBar:    false

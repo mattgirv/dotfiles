@@ -1,11 +1,10 @@
-" mattgirv's .vimrc - 08/03/2012
+" mattgirv's .vimrc 
 
 ""
 "" VISUALS
 ""
-
-colorscheme base16-gruvbox-dark-hard
-set t_Co=256
+colorscheme tender
+"set t_Co=256
 set background=dark
 set nocompatible
 filetype off
@@ -30,6 +29,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jacoborus/tender.vim'
 
 call vundle#end()
 
@@ -101,6 +101,7 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 " vim-airline stuff
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'tender'
 " tagbar / ctags binds
 nmap <F8> :TagbarToggle<CR>
 " nerdtree binds
